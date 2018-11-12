@@ -2,26 +2,40 @@ tx_gridelementsbootstrap {
 
     settings {
 
-        // Define your own extensions here
+        // ---------------------------------------------------------------------------
+        // Define your own gridelements modules here
+        // ---------------------------------------------------------------------------
+
         modules{
+            // First module "Akkordeon.html"
             akkordeon {
                 title = Akkordeon
                 description = Just add some contentelements of type "text and media" and see what happens
+                // This CSS classes will only be available when chosing this module
                 css {
+                    // css-class = Title
                     akkordeon1 = Akkordeon Type 1
+                    akkordeon1 = Akkordeon Type 2
                     container = Container Boxed
                     container-fluid = Full Width Container
                 }
             }
+            // Second module "Debug.html"
             debug {
                 title = Debug Output (see variables you can use)
                 description = Add some elements and see the debug output, so you know how you can extend this and how much you can do with this :)
+                // This CSS classes will only be available when chosing this module
                 css {
+                    // css-class = Title
                     container = Container Boxed
                     container-fluid = Full Width Container
                 }
             }
         }
+
+        // ---------------------------------------------------------------------------
+        // BOOTSTRAP SECTION
+        // ---------------------------------------------------------------------------
 
         // Extra CSS Classes for visibility
         visibility {
