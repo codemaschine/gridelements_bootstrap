@@ -4,8 +4,18 @@ tx_gridelementsbootstrap {
 
         // Define your own extensions here
         modules{
-            demo {
-                title = Just a demo module
+            akkordeon {
+                title = Akkordeon
+                description = Just add some contentelements of type "text and media" and see what happens
+                css {
+                    akkordeon1 = Akkordeon Type 1
+                    container = Container Boxed
+                    container-fluid = Full Width Container
+                }
+            }
+            debug {
+                title = Debug Output (see variables you can use)
+                description = Add some elements and see the debug output, so you know how you can extend this and how much you can do with this :)
                 css {
                     container = Container Boxed
                     container-fluid = Full Width Container

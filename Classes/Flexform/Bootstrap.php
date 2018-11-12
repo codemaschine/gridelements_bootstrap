@@ -3,6 +3,7 @@
 namespace SaschaEnde\GridelementsBootstrap\Flexform;
 
 use t3h\t3h;
+use TYPO3\CMS\Backend\Form\Element\UserElement;
 use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 
 class Bootstrap {
@@ -139,10 +140,13 @@ class Bootstrap {
     }
 
     public function getModules(&$fConfig){
-        $settings = [];
-        $this->mergeTS($settings,'partials');
+        $ts = t3h::Settings()->getFullTyposcript()['tx_gridelementsbootstrap.']['settings.']['modules.'];
 
-        foreach ($settings as $key=>$value) {
+        foreach ($ts as $key=>$value) {
+
+            $key = substr($key,0,-1);
+            $value = $value['title'];
+
             // pull it into the config array
             array_push($fConfig['items'], [
                 $value,
@@ -153,18 +157,22 @@ class Bootstrap {
 
     public function getModuleCss(&$fConfig){
 
-        DebuggerUtility::var_dump($fConfig);
+        $module = $fConfig['row']['partial'][0];
+        $css = t3h::Settings()->getFullTyposcript()['tx_gridelementsbootstrap.']['settings.']['modules.'][$module.'.']['css.'];
 
-        $settings = [];
-        $this->mergeTS($settings,'partialCss');
-
-        foreach ($settings as $key=>$value) {
+        foreach ($css as $key=>$value) {
             // pull it into the config array
             array_push($fConfig['items'], [
                 $value,
                 $key
             ]);
         }
+    }
+
+    public function getModuleDescription($PA, $fobj){
+        $module = $PA['row']['pi_flexform']['data']['container']['lDEF']['partial']['vDEF'][0];
+        $description = t3h::Settings()->getFullTyposcript()['tx_gridelementsbootstrap.']['settings.']['modules.'][$module.'.']['description'];
+        return '<div class="alert alert-danger" role="alert">'.$description.'</div>';
     }
 
     public function getContainer(&$fConfig) {

@@ -1,7 +1,7 @@
+{namespace geb=SaschaEnde\GridelementsBootstrap\ViewHelpers}
 {namespace t3h=SaschaEnde\T3helpers\ViewHelpers}
 
 <div class="{t3h:css.class(css: '{0:data.flexform_container}')}">
-
-    <f:format.raw>{data.tx_gridelements_view_column_1}</f:format.raw>
-
+    <geb:object contentelements="{data.tx_gridelements_view_children}" as="objects"/>
+    <f:render partial="{data.flexform_partial}" arguments="{html:data.tx_gridelements_view_column_1,elements:data.tx_gridelements_view_children,objects:objects}"/>
 </div>
