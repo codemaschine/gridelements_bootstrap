@@ -1,0 +1,69 @@
+tx_gridelementsbootstrap {
+
+    settings {
+
+        // Define your own extensions here
+        modules{
+            demo {
+                title = Just a demo module
+                css {
+                    container = Container Boxed
+                    container-fluid = Full Width Container
+                }
+            }
+        }
+
+        // Extra CSS Classes for visibility
+        visibility {
+            0 = text-left
+            1 = text-center
+            2 = text-right
+            3 = text-justify
+            4 = text-nowrap
+        }
+
+        // Extra CSS Classes for Container (container, container-fluid...)
+        container {
+            0 = equalize-rows
+            1 = something-other
+        }
+
+    }
+
+}
+
+// -----------------------------------------------------------------------------------------
+// Above should not be modified unless you know what you do
+// -----------------------------------------------------------------------------------------
+
+lib.gridelements.defaultGridSetup {
+    cObject = FLUIDTEMPLATE
+    cObject {
+        format = html
+
+        partialRootPaths {
+            gridelements_bootstrap = EXT:gridelements_bootstrap/Resources/Private/Partials/
+        }
+
+        layoutRootPaths {
+            gridelements_bootstrap = EXT:gridelements_bootstrap/Resources/Private/Layouts/
+        }
+
+        templateRootPaths {
+            gridelements_bootstrap = EXT:gridelements_bootstrap/Resources/Private/Templates/
+        }
+
+    }
+}
+
+tt_content.gridelements_pi1.20.10.setup {
+
+    # 1 spaltig
+    boot1col < lib.gridelements.defaultGridSetup
+    boot1col.cObject.templateName = Boot1col
+
+    # 2 spaltig
+    boot2cols < lib.gridelements.defaultGridSetup
+    boot2cols.cObject.templateName = Boot2cols
+
+}
