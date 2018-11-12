@@ -7,6 +7,11 @@ Modular system for TYPO3 gridelements: Extend gridelements with your own Modules
 * **Bootstrap**: 3
 * **Type**: plugin
 
+# Changelog
+
+* 13.11.2018 [0.0.2] Added dependency (shame on me)
+* 13.11.2018 [0.0.1] First release
+
 # Installation
 
 * Install "gridelements_bootstrap" plugin from GIT or TER
