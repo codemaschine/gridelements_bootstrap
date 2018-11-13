@@ -20,7 +20,7 @@
                                 <renderType>selectMultipleSideBySide</renderType>
                                 <itemsProcFunc>SaschaEnde\GridelementsBootstrap\Flexform\Bootstrap->getContainer</itemsProcFunc>
                                 <size>10</size>
-                                <minitems>1</minitems>
+                                <minitems>0</minitems>
                                 <maxitems>9999</maxitems>
                             </config>
                         </TCEforms>
