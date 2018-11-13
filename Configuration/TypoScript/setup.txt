@@ -8,6 +8,17 @@ tx_gridelementsbootstrap {
 
         modules{
             // First module "Akkordeon.html"
+            default {
+                title = Default
+                description = Default Container with 1 col
+                // This CSS classes will only be available when chosing this module
+                css {
+                    // css-class = Title
+                    container = Container Boxed
+                    container-fluid = Full Width Container
+                }
+            }
+            // First module "Akkordeon.html"
             akkordeon {
                 title = Akkordeon
                 description = Just add some contentelements of type "text and media" and see what happens

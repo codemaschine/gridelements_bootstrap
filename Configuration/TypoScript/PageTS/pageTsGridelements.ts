@@ -3,7 +3,7 @@ tx_gridelements {
     setup {
 
         boot1col {
-            title = Gridelements Bootstrap: Modulcontainer (erweiterbar)
+            title = Gridelements Bootstrap: 1 spaltig (Modulcontainer, erweiterbar)
             description = Eine Spalte
             config {
                 colCount = 1
