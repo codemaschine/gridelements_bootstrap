@@ -31,6 +31,19 @@ tx_gridelementsbootstrap {
                     container-fluid = Full Width Container
                 }
             }
+            // First module "Akkordeon.html"
+            alert {
+                title = Bootstrap Alert
+                description = Add a default alert
+                // This CSS classes will only be available when chosing this module
+                css {
+                    // css-class = Title
+                    alert-success = Success
+                    alert-info = Info
+                    alert-warning = Warning
+                    alert-danger = Danger
+                }
+            }
         }
 
         // ---------------------------------------------------------------------------
