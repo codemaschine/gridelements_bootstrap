@@ -7,7 +7,7 @@ tx_gridelementsbootstrap {
         // ---------------------------------------------------------------------------
 
         modules{
-            // First module "Akkordeon.html"
+            // Do not remove default module, because it is the default
             default {
                 title = Default
                 description = Default Container with 1 col
