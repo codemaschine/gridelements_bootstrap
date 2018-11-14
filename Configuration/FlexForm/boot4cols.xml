@@ -231,5 +231,72 @@
                 </el>
             </ROOT>
         </colC>
+        <colD>
+            <ROOT type="array">
+                <TCEforms>
+                    <sheetTitle>Spalte D</sheetTitle>
+                </TCEforms>
+                <el type="array">
+
+
+                    <gridD>
+                        <TCEforms type="array">
+                            <label>Grid</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectMultipleSideBySide</renderType>
+                                <itemsProcFunc>SaschaEnde\GridelementsBootstrap\Flexform\Bootstrap->getGrid</itemsProcFunc>
+                                <size>10</size>
+                                <minitems>1</minitems>
+                                <maxitems>9999</maxitems>
+                            </config>
+                        </TCEforms>
+                    </gridD>
+
+                    <pushD>
+                        <TCEforms type="array">
+                            <label>Push the column to the right by x number of columns</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectMultipleSideBySide</renderType>
+                                <itemsProcFunc>SaschaEnde\GridelementsBootstrap\Flexform\Bootstrap->getPush</itemsProcFunc>
+                                <size>10</size>
+                                <minitems>0</minitems>
+                                <maxitems>9999</maxitems>
+                            </config>
+                        </TCEforms>
+                    </pushD>
+
+                    <pullD>
+                        <TCEforms type="array">
+                            <label>Pull the column to the left by x number of columns</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectMultipleSideBySide</renderType>
+                                <itemsProcFunc>SaschaEnde\GridelementsBootstrap\Flexform\Bootstrap->getPull</itemsProcFunc>
+                                <size>10</size>
+                                <minitems>0</minitems>
+                                <maxitems>9999</maxitems>
+                            </config>
+                        </TCEforms>
+                    </pullD>
+
+                    <visibilityD>
+                        <TCEforms type="array">
+                            <label>Sichtbarkeit</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectMultipleSideBySide</renderType>
+                                <itemsProcFunc>SaschaEnde\GridelementsBootstrap\Flexform\Bootstrap->getVisibility</itemsProcFunc>
+                                <size>4</size>
+                                <minitems>0</minitems>
+                                <maxitems>4</maxitems>
+                            </config>
+                        </TCEforms>
+                    </visibilityD>
+
+                </el>
+            </ROOT>
+        </colD>
     </sheets>
 </T3DataStructure>

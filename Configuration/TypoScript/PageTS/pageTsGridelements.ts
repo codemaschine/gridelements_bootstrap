@@ -80,6 +80,42 @@ tx_gridelements {
             flexformDS = FILE:EXT:gridelements_bootstrap/Configuration/FlexForm/boot3cols.xml
         }
 
+        boot4cols {
+            title = Gridelements Bootstrap: 4 spaltig
+            description = Vier Spalten
+            config {
+                colCount = 4
+                rowCount = 1
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Spalte A
+                                colPos = 1
+                            }
+
+                            2 {
+                                name = Spalte B
+                                colPos = 2
+                            }
+
+                            3 {
+                                name = Spalte C
+                                colPos = 3
+                            }
+
+                            4 {
+                                name = Spalte D
+                                colPos = 4
+                            }
+                        }
+                    }
+                }
+            }
+
+            flexformDS = FILE:EXT:gridelements_bootstrap/Configuration/FlexForm/boot4cols.xml
+        }
+
     }
 }
 
