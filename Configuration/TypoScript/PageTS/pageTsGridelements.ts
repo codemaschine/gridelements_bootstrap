@@ -49,6 +49,37 @@ tx_gridelements {
             flexformDS = FILE:EXT:gridelements_bootstrap/Configuration/FlexForm/boot2cols.xml
         }
 
+        boot3cols {
+            title = Gridelements Bootstrap: 3 spaltig
+            description = Drei Spalten
+            config {
+                colCount = 3
+                rowCount = 1
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Spalte A
+                                colPos = 1
+                            }
+
+                            2 {
+                                name = Spalte B
+                                colPos = 2
+                            }
+
+                            3 {
+                                name = Spalte C
+                                colPos = 3
+                            }
+                        }
+                    }
+                }
+            }
+
+            flexformDS = FILE:EXT:gridelements_bootstrap/Configuration/FlexForm/boot3cols.xml
+        }
+
     }
 }
 
