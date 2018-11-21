@@ -2,12 +2,11 @@
 
 namespace SaschaEnde\GridelementsBootstrap\ViewHelpers;
 
-use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
-use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 use TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper;
 
 
-class ObjectViewHelper extends AbstractViewHelper {
+class ObjectViewHelper extends AbstractViewHelper
+{
 
     /**
      * @var \SaschaEnde\T3helpers\Domain\Repository\ContentsRepository
@@ -39,16 +38,17 @@ class ObjectViewHelper extends AbstractViewHelper {
      * @param integer $uid
      * @return string
      */
-    public function render() {
+    public function render()
+    {
 
         if ($this->templateVariableContainer->exists($this->arguments['as']) === TRUE) {
             $this->templateVariableContainer->remove($this->arguments['as']);
         }
         $objects = [];
-        foreach ($this->arguments['contentelements'] as $ce){
+        foreach ($this->arguments['contentelements'] as $ce) {
             $objects[] = [
-                'raw'   => $ce,
-                'object'    => $this->contentsRepository->findByIdentifier($ce['uid'])
+                'raw' => $ce,
+                'object' => $this->contentsRepository->findByIdentifier($ce['uid'])
             ];
         }
 

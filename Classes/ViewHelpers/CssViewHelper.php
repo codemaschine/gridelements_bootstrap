@@ -2,11 +2,6 @@
 
 namespace SaschaEnde\GridelementsBootstrap\ViewHelpers;
 
-use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
-
-/**
- * {namespace t3h=SaschaEnde\T3helpers\ViewHelpers}
- */
 class CssViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper
 {
 
