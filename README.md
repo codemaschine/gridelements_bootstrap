@@ -9,8 +9,7 @@ Modular system for TYPO3 gridelements: Extend gridelements with your own Modules
 
 # Changelog
 
-* 13.11.2018 [0.0.2] Added dependency (shame on me)
-* 13.11.2018 [0.0.1] First release
+working progress
 
 # Installation
 
@@ -31,6 +30,17 @@ tx_gridelementsbootstrap {
         // ---------------------------------------------------------------------------
 
         modules{
+            // Do not remove default module, because it is the default
+            default {
+                title = Default
+                description = Default Container with 1 col
+                // This CSS classes will only be available when chosing this module
+                css {
+                    // css-class = Title
+                    container = Container Boxed
+                    container-fluid = Full Width Container
+                }
+            }
             // First module "Akkordeon.html"
             akkordeon {
                 title = Akkordeon
@@ -53,6 +63,30 @@ tx_gridelementsbootstrap {
                     // css-class = Title
                     container = Container Boxed
                     container-fluid = Full Width Container
+                }
+            }
+
+            // Bootstrap Elements
+
+            alert {
+                title = Bootstrap Alert
+                description = Add a default alert
+                // This CSS classes will only be available when chosing this module
+                css {
+                    // css-class = Title
+                    alert-success = Success
+                    alert-info = Info
+                    alert-warning = Warning
+                    alert-danger = Danger
+                }
+            }
+
+            well {
+                title = Bootstrap Well
+                description = Add a default well
+                // This CSS classes will only be available when chosing this module
+                css {
+
                 }
             }
         }
