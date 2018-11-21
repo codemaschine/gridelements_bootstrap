@@ -9,7 +9,7 @@ Modular system for TYPO3 gridelements: Extend gridelements with your own Modules
 
 # Changelog
 
-working progress
+* 21.11.2018 - Removed namespaces from templates
 
 # Installation
 
