@@ -66,6 +66,15 @@ tx_gridelementsbootstrap {
 
                 }
             }
+
+            jumbotron {
+                title = Bootstrap Jumbotron
+                description = Add a default jumbotron
+                // This CSS classes will only be available when chosing this module
+                css {
+
+                }
+            }
         }
 
         // ---------------------------------------------------------------------------
