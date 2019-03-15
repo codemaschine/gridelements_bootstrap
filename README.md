@@ -3,13 +3,9 @@
 Modular system for TYPO3 gridelements: Extend gridelements with your own Modules (every module is one partial). Just extend the TypoScript modules Section and add a partial with the same name, thats it. Examples are included. In every partial you have enhanced data with real objects to build all you want just with fluid.
 
 * **TER**: https://extensions.typo3.org/extension/gridelements_bootstrap/
-* **CMS**: TYPO3 8
+* **CMS**: TYPO3 8/9
 * **Bootstrap**: 3
 * **Type**: plugin
-
-# Changelog
-
-* 21.11.2018 - Removed namespaces from templates
 
 # Installation
 
