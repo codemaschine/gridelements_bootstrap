@@ -7,6 +7,16 @@ Modular system for TYPO3 gridelements: Extend gridelements with your own Modules
 * **Bootstrap**: 3
 * **Type**: plugin
 
+# Screenshots
+
+## Modulares erweiterbares Template System
+
+![img1](Documentation/snap0.jpg)
+
+## Grids zusammenklicken
+
+![img1](Documentation/snap1.jpg)
+
 # Installation
 
 * Install "gridelements_bootstrap" plugin from GIT or TER
