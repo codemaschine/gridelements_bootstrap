@@ -17,7 +17,8 @@ $EM_CONF[$_EXTKEY] = [
         'depends' => [
             'typo3' => '8.7.0-9.5.99',
             't3helpers' =>  '0.9.18',
-            'gridelements'  => '8.2.3'
+            'gridelements'  => '8.2.3',
+            'vhs'   => '5.1.0'
         ],
         'conflicts' => [],
         'suggests' => [],
