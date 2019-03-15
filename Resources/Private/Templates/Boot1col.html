@@ -1,9 +1,7 @@
-<grbo:object contentelements="{data.tx_gridelements_view_children}" as="objects"/>
 <grbo:css css="{0:data.flexform_container}" as="css"/>
-
 
 <f:render partial="{data.flexform_partial}" arguments="{
     css:css,
     html:data.tx_gridelements_view_column_1,
-    objects:objects
+    objects:data.tx_gridelements_view_children
 }"/>
