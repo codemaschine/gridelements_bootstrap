@@ -2,7 +2,7 @@
 
 namespace SaschaEnde\GridelementsBootstrap\ViewHelpers;
 
-class CssViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper
+class CssViewHelper extends \TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper
 {
 
     /**

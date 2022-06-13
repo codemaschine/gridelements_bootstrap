@@ -18,7 +18,7 @@
                             <config>
                                 <type>select</type>
                                 <itemsProcFunc>SaschaEnde\GridelementsBootstrap\Flexform\Bootstrap->getModules</itemsProcFunc>
-                                <size>1</size>
+                                <renderType>selectSingle</renderType>
                                 <minitems>1</minitems>
                                 <maxitems>1</maxitems>
                                 <default>default</default>
@@ -31,7 +31,7 @@
                             <label>Description</label>
                             <config>
                                 <type>user</type>
-                                <userFunc>SaschaEnde\GridelementsBootstrap\Flexform\Bootstrap->getModuleDescription</userFunc>
+                                <renderType>grindelements_render</renderType>
                             </config>
                         </TCEforms>
                     </description>
